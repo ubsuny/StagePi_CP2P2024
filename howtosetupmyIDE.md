@@ -7,4 +7,4 @@
 6. Go to Extensions at the left and add necessary extensions such as Jupyter, pylint, pytest, etc. as per your requirements.
 7. Add this extension to the devcontainer.json file by clicking the settings symbol.
 8. Commit these changes.
-9. Then rebuild the codespace system. Hence done! Your required environment is ready.
+9. Rebuild the codespace system. Hence done! Your required environment is ready.
