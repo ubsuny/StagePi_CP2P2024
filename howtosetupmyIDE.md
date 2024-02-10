@@ -1,7 +1,7 @@
 # Steps to create a working environment:
 1. Create a new codespace from your GitHub repository.
 2. Press ">" to activate the command and type "Add Dev Container Configuration File".
-3. Select it and click "Create new configuration"
+3. Select it and click "Create new configuration".
 4. Click "Show all Definitions".
 5. Type "Python3" and select its version (I have selected the latest version 3.12).
 6. Go to Extensions at the left and add necessary extensions such as Jupyter, pylint, pytest, etc. as per your requirements.
