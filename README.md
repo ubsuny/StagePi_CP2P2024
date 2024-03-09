@@ -1,5 +1,5 @@
 # StagePi_CP2P2024
-Studying Second Harmonic Generation (SHG) of Europium Oxide and Potassium Tantalate (EuO/KTO) compound as a part of "CP2 Spring 2024" project work.
+Studying Second Harmonic Generation (SHG) of Europium Oxide Potassium Tantalate (EuO/KTO) compound as a part of "CP2 Spring 2024" project work.
 
 ## Data types involved in code
 There are several data types involved in the Python annotations which I will be using in the upcoming project. Some of them are listed below:
