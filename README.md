@@ -1,5 +1,5 @@
 # StagePi_CP2P2024
-Imaging Molybdenum disulfide (MoS2) as a part of "CP2 Spring 2024" project work.
+Studying Second Harmonic Generation (SHG) of Europium Oxide Potassium Tantalate (EuO/KTO) compound as a part of "CP2 Spring 2024" project work.
 
 ## Data types involved in code
 There are several data types involved in the Python annotations which I will be using in the upcoming project. Some of them are listed below:
@@ -17,4 +17,5 @@ There are several data types involved in the Python annotations which I will be 
 For any hypothetical sample: 
 - random SHG intensities are created using `np.random.rand(len(positions))np.random.rand(len(positions))` based on distance when piezo stage moves along x and z axis.
 - random SHG intensities `shg_intensities = electric_fields**2 * d_effs**2` are made based on random photon energies `np.random.uniform(1.5, 3.0, 100)`. The electric fields are also generated randomly `np.random.normal(1.0, 0.1, 100)` and randomly chosen effective non-linear coefficients `d_effs = np.random.normal(1.0, 0.1, 100)`.
+
 For more details, the outputs have been generated in the file `simulated_SHG.ipynb`.
