@@ -11,4 +11,10 @@ There are several data types involved in the Python annotations which I will be 
 - **dict:** This data type represents dictionaries or unordered collections of key-value pairs, that can be of any type. For example in the code, the variables `self.volt_max`, `self.volt_min`, and `self.volt_offs` are all dictionaries of floats.
 - **NoneType:** This data type represents the absence of a value, and is denoted by the keyword None. For example in the code, the methods `set_pos`, `set_channel`, etc do not return any value.
 - **Exception:** This data type represents an error or abnormal condition that occurs during the execution of a program. For example, the `raise Exception`.
-- **ValueError:** This data type represents an error that occurs when a function or operation receives an argument that has the right type but an inappropriate value. For example, the `raise ValueError`. 
+- **ValueError:** This data type represents an error that occurs when a function or operation receives an argument that has the right type but an inappropriate value. For example, the `raise ValueError`.
+
+## Random Number generated to simulate SHG results
+For any hypothetical sample: 
+- random SHG intensities are created using `np.random.rand(len(positions))np.random.rand(len(positions))` based on distance when piezo stage moves along x and z axis.
+- random SHG intensities `shg_intensities = electric_fields**2 * d_effs**2` are made based on random photon energies `np.random.uniform(1.5, 3.0, 100)`. The electric fields are also generated randomly `np.random.normal(1.0, 0.1, 100)` and randomly chosen effective non-linear coefficients `d_effs = np.random.normal(1.0, 0.1, 100)`.
+For more details, the outputs have been generated in the file `simulated_SHG.ipynb`.
