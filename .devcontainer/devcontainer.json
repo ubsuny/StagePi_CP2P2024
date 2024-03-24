@@ -11,7 +11,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-python.pylint",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"ExecutableBookProject.myst-highlight"
 			]
 		}
 	}
