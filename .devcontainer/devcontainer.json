@@ -4,18 +4,33 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
-	// "features": {
-	//	"ghcr.io/devcontainers/features/python:1": {}
-	// },
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-python.pylint",
 				"ms-toolsai.jupyter",
-				"ExecutableBookProject.myst-highlight"
+				"ExecutableBookProject.myst-highlight",
+				"dbaeumer.vscode-eslint",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"mechatroner.rainbow-csv",
+				"ms-python.python"
 			]
 		}
-	}
+	},
+	"updateContentCommand": "python3 -m pip install -r requirements.txt"
+
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/python:1": {
+	// 		"installTools": true,
+	// 		"version": "3.12"
+	// 	}
+	// }
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
