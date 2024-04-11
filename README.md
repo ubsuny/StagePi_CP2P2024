@@ -29,3 +29,6 @@ $\chi^{(2)}$ and $\chi^{(3)}$ are degree of non-linearity known as non-linear su
 An experimental work (by T. Santhanakrishnan et al. 2019) performing SHG on a sample LAO/STO interfaces and its results are shown below:
 ![Screenshot 2024-03-24 105036](https://github.com/s4il3sh/StagePi_CP2P2024/assets/144289804/400bd371-24af-44f5-98f7-7b1dd1d08043)
 More details can be obtained from `SHG.ipynb` file.
+
+## Tensorflow in the code
+Tensorflow is used in the code helping to move StagePi. The code and the output of the code is shown in the file `stage_pi.ipynb`. The use of tensorflow would be more effective in machine learning and deep learning by feeding some data to extrapolate. The code I used in moving the StagePi using tensorflow simply replace the similar work of the numpy. Hence I do not see it is being used as its true potential in the code.
