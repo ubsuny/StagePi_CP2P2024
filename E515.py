@@ -303,6 +303,8 @@ class E515():
         ynumber = abs(ypos[1]-ypos[0]) / ypos[2] + 1
         yposs = np.linspace(ypos[0],ypos[1],int(ynumber))
         xposs = np.linspace(xpos[0],xpos[1],int(xnumber))
+
+        positions = (xposs[0], yposs[0])
         
         # move to the start point
         #self.set_pos(yposs[0], 2)
@@ -338,19 +340,6 @@ class E515():
         self.writeln('SYST:ERR?')
         return self.readln()
     
-    def get_stage_position_and_voltage(self, channel=0):
-        '''
-        Get the stage position in micrometers and its corresponding voltage.
-        channel: The channel number to get the position from. Default is 0 for the current channel.
-        return: A tuple containing the position in micrometers and the voltage.
-        '''
-        # Get the position in micrometers using the servo signal
-        position_um = self.get_pos_servo(channel)
-        
-        # Get the position in voltage signal
-        voltage = self.get_pos(channel)
-        
-        return (position_um, voltage)
 
 
   #  def scanline_servo(self,channel,start,stop,step):
