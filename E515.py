@@ -1,3 +1,5 @@
+# Code created by Prof. Tim and his research group.
+
 import serial
 import time
 import numpy as np
