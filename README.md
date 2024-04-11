@@ -19,3 +19,16 @@ For any hypothetical sample:
 - random SHG intensities `shg_intensities = electric_fields**2 * d_effs**2` are made based on random photon energies `np.random.uniform(1.5, 3.0, 100)`. The electric fields are also generated randomly `np.random.normal(1.0, 0.1, 100)` and randomly chosen effective non-linear coefficients `d_effs = np.random.normal(1.0, 0.1, 100)`.
 
 For more details, the outputs have been generated in the file `simulated_SHG.ipynb`.
+
+## Physics and Literature Review
+Second Harmonic Generation (SHG) is a fascinating nonlinear optical process where two photons of the same frequency interact within a nonlinear material to create a new photon with twice the energy, and therefore, twice the frequency and half the wavelength of the original photons.
+
+$$P  = \chi E = \chi^{(1)} E + \chi^{(2)} E^2 + \chi^{(3)} E^3$$
+$\chi^{(2)}$ and $\chi^{(3)}$ are degree of non-linearity known as non-linear susceptibility or polarizability.
+
+An experimental work (by T. Santhanakrishnan et al. 2019) performing SHG on a sample LAO/STO interfaces and its results are shown below:
+![Screenshot 2024-03-24 105036](https://github.com/s4il3sh/StagePi_CP2P2024/assets/144289804/400bd371-24af-44f5-98f7-7b1dd1d08043)
+More details can be obtained from `SHG.ipynb` file.
+
+## Tensorflow in the code
+Tensorflow is used in the code helping to move StagePi. The code and the output of the code is shown in the file `stage_pi.ipynb`. The use of tensorflow would be more effective in machine learning and deep learning by feeding some data to extrapolate. The code I used in moving the StagePi using tensorflow simply replace the similar work of the numpy. Hence I do not see it is being used as its true potential in the code.

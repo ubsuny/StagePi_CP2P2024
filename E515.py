@@ -1,3 +1,5 @@
+# Code created by Prof. Tim and his research group.
+
 import serial
 import time
 import numpy as np
@@ -303,6 +305,8 @@ class E515():
         ynumber = abs(ypos[1]-ypos[0]) / ypos[2] + 1
         yposs = np.linspace(ypos[0],ypos[1],int(ynumber))
         xposs = np.linspace(xpos[0],xpos[1],int(xnumber))
+
+        positions = (xposs[0], yposs[0])
         
         # move to the start point
         #self.set_pos(yposs[0], 2)
@@ -337,6 +341,7 @@ class E515():
         '''
         self.writeln('SYST:ERR?')
         return self.readln()
+    
 
 
   #  def scanline_servo(self,channel,start,stop,step):
