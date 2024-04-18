@@ -4,3 +4,4 @@ tensorflow
 gpiozero
 serial
 pandas
+scipy
