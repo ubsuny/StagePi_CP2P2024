@@ -21,7 +21,7 @@ For any hypothetical sample:
 For more details, the outputs have been generated in the file `simulated_SHG.ipynb`.
 
 ## Why is the study of the Piezo stage necessary?
-We can examine a sample with precise and consistent motion with the use of the Piezo stage. We place a sample EuO/KTO attached to the holder of the stage and move the sample pixel-by-pixel and study the SHG intensity of the substrate KTO and film EuO grown on the substrate. The interface region is the region of our interest. 
+We can examine a sample with precise and consistent motion with the use of the Piezo stage. We place a sample EuO/KTO attached to the holder of the stage and move the sample pixel-by-pixel and study the SHG intensity of the substrate KTO and film EuO grown on the substrate. So we will be studying the change in the SHG intensity at the substrate and interface region by automating Piezo stage.
 
 ## Physics and Literature Review
 Second Harmonic Generation (SHG) is a fascinating nonlinear optical process where two photons of the same frequency interact within a nonlinear material to create a new photon with twice the energy, and therefore, twice the frequency and half the wavelength of the original photons.
