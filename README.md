@@ -15,10 +15,13 @@ There are several data types involved in the Python annotations which I will be 
 
 ## Random Number generated to simulate SHG results
 For any hypothetical sample: 
-- random SHG intensities are created using `np.random.rand(len(positions))np.random.rand(len(positions))` based on distance when piezo stage moves along x and z axis.
+- random SHG intensities are created using `np.random.rand(len(positions))np.random.rand(len(positions))` based on distance when piezo stage moves along the x and z axes.
 - random SHG intensities `shg_intensities = electric_fields**2 * d_effs**2` are made based on random photon energies `np.random.uniform(1.5, 3.0, 100)`. The electric fields are also generated randomly `np.random.normal(1.0, 0.1, 100)` and randomly chosen effective non-linear coefficients `d_effs = np.random.normal(1.0, 0.1, 100)`.
 
 For more details, the outputs have been generated in the file `simulated_SHG.ipynb`.
+
+## Why is the study of the Piezo stage necessary?
+We can examine a sample with precise and consistent motion with the use of the Piezo stage. We place a sample EuO/KTO attached to the holder of the stage and move the sample pixel-by-pixel and study the SHG intensity of the substrate KTO and film EuO grown on the substrate. The interface region is the region of our interest. 
 
 ## Physics and Literature Review
 Second Harmonic Generation (SHG) is a fascinating nonlinear optical process where two photons of the same frequency interact within a nonlinear material to create a new photon with twice the energy, and therefore, twice the frequency and half the wavelength of the original photons.
