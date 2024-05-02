@@ -35,3 +35,6 @@ More details can be obtained from `SHG.ipynb` file.
 
 ## Tensorflow in the code
 Tensorflow is used in the code helping to move StagePi. The code and the output of the code is shown in the file `stage_pi.ipynb`. The use of tensorflow would be more effective in machine learning and deep learning by feeding some data to extrapolate. The code I used in moving the StagePi using tensorflow simply replace the similar work of the numpy. Hence I do not see it is being used as its true potential in the code.
+
+## Calibration code for StagePi
+The code helps to estimate the position of the stage from the input voltage. It asks for axis (x, y, z) you want to estimate the position and voltage you desire. The code returns the position with uncertiainty. This code is provided in `calibrated_stagepi.py` file.
